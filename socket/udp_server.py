@@ -32,7 +32,7 @@ def tick():
             break
         reply = "Received data " + str(data)
 
-        g_socket.sendto(reply, recievedAddr)
+        g_socket.sendto( str.eencode(reply), recievedAddr)
         print("IP addr: ", recievedAddr, " message ", receivedData)
 
     g_socket.close()
