@@ -18,3 +18,5 @@ def connect():
             print(data, " ", latency, "ms")
         except socket.timeout:
             print("REQUEST time out")
+
+connect()
