@@ -30,7 +30,7 @@ def tick():
 
         if(not data):
             break
-        reply = "Received data " + data
+        reply = "Received data " + str(data)
 
         g_socket.sendto(reply, recievedAddr)
         print("IP addr: ", recievedAddr, " message ", receivedData)
