@@ -9,7 +9,7 @@ def connect():
     strToSend = ""
     while(True):
         input(strToSend)
-        strToSend = bytearray(strToSend)
+        strToSend = bytearray(strToSend, encoding="ascii", errors="ignore")
         soket.sendto(strToSend, (ADDRESS, PORT))
         start = time.time()
         try:
