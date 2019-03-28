@@ -6,7 +6,7 @@ PORT = 1443
 
 def connect():
     soket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    
+    strToSend = ""
     while(True):
         input(strToSend)
         soket.sendto(strToSend, (ADDRESS, PORT))
