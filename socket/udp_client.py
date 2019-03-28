@@ -8,7 +8,7 @@ def connect():
     soket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     strToSend = ""
     while(True):
-        input(strToSend)
+        strToSend = input()
         strToSend = bytearray(strToSend, encoding="ascii", errors="ignore")
         soket.sendto(strToSend, (ADDRESS, PORT))
         start = time.time()
